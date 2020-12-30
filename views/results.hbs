@@ -1,0 +1,21 @@
+<h1>Results</h1>
+
+<h3>You searched for "{{busqueda}}"</h3>
+
+<section class="search-results">
+
+  {{#each peliculas}}
+  <div class="single-result">
+    <div class="single-result-poster">
+      <img src="{{Poster}}" alt="{{Title}}">
+    </div>
+    <div class="single-result-info">
+      <h5><a href="/movie/{{imdbID}}">{{Title}}</a></h5>
+      <small>{{Year}}</small>
+      {{imdbID}}
+      {{Type}}
+    </div>
+  </div>
+  {{/each}}
+
+</section>
